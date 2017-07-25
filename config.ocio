@@ -216,6 +216,46 @@ looks:
     transform: !<FileTransform> {src: Filmic_to_0-35_1-30.spi1d, interpolation: linear}
 
   - !<Look>
+    name: AgX Very High Contrast
+    process_space: Filmic Log Encoding
+    transform: !<FileTransform> {src: curve3_25.spi1d, interpolation: linear}
+
+  - !<Look>
+    name: AgX High Contrast
+    process_space: Filmic Log Encoding
+    transform: !<FileTransform> {src: curve3_0.spi1d, interpolation: linear}
+
+  - !<Look>
+    name: AgX Medium High Contrast
+    process_space: Filmic Log Encoding
+    transform: !<FileTransform> {src: curve2_75.spi1d, interpolation: best}
+
+  - !<Look>
+    name: AgX Base Contrast
+    process_space: Filmic Log Encoding
+    transform: !<FileTransform> {src: curve2_5.spi1d, interpolation: linear}
+
+  - !<Look>
+    name: AgX Medium Low Contrast
+    process_space: Filmic Log Encoding
+    transform: !<FileTransform> {src: curve2_25.spi1d, interpolation: linear}
+
+  - !<Look>
+    name: AgX Low Contrast
+    process_space: Filmic Log Encoding
+    transform: !<FileTransform> {src: curve2_0.spi1d, interpolation: linear}
+
+  - !<Look>
+    name: AgX Very Low Contrast
+    process_space: Filmic Log Encoding
+    transform: !<FileTransform> {src: curve1_75.spi1d, interpolation: linear}
+
+  - !<Look>
+    name: AgX Very Very Low Contrast
+    process_space: Filmic Log Encoding
+    transform: !<FileTransform> {src: curve1_5.spi1d, interpolation: linear}
+
+  - !<Look>
     name: Testing
     process_space: Filmic Log Encoding
     transform: !<FileTransform> {src: Filmic_testing.spi1d, interpolation: linear}
